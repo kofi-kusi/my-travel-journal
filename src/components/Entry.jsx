@@ -1,3 +1,5 @@
+import marker from '../assets/images/marker.png'
+
 export default function Entry(props) {
     return (
         <article className="entry">
@@ -10,7 +12,7 @@ export default function Entry(props) {
             <div className="details">
                 <div className="top">
                     <div className="location">
-                    <img className="marker-logo" src="../src/assets/images/marker.png" alt="marker logo" />
+                    <img className="marker-logo" src={marker}alt="marker logo" />
                     <p className="details--location">
                         {props.entry.country.toUpperCase()}
                     </p>
