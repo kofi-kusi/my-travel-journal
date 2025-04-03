@@ -3,8 +3,8 @@ export default function Entry(props) {
         <article className="entry">
             <div>
                 <img className="place-img" 
-                src={props.img.src} 
-                alt={props.img.alt}
+                src={props.entry.img.src} 
+                alt={props.entry.img.alt}
                 />
             </div>
             <div className="details">
@@ -12,17 +12,17 @@ export default function Entry(props) {
                     <div className="location">
                     <img className="marker-logo" src="src/assets/images/marker.png" alt="marker logo" />
                     <p className="details--location">
-                        {props.country.toUpperCase()}
+                        {props.entry.country.toUpperCase()}
                     </p>
                     </div>
                     <a className="details--link" 
-                    href={props.googleMapsLink}>View on Google Maps</a>
+                    href={props.entry.googleMapsLink}>View on Google Maps</a>
                 </div>
-                <h2>{ props.title }</h2>
+                <h2>{ props.entry.title }</h2>
                 <p className="date">
-                    {props.date}
+                    {props.entry.date}
                 </p>
-                <p>{ props.text }</p>
+                <p>{ props.entry.text }</p>
             </div>
             <hr></hr>
         </article>
